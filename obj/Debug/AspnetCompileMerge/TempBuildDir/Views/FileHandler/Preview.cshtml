@@ -1,0 +1,28 @@
+﻿@model FileHandlerApp2.Models.FileHandlerModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Preview</title>
+</head>
+<body>
+    <div>
+        <h2>Preview</h2>
+        <b>ResourceId:</b> @Model.ActivationParameters.ResourceId <br />
+        <b>CultureName:</b> @Model.ActivationParameters.CultureName <br />
+        <b>FileGet:</b> @Model.ActivationParameters.FileGet <br />
+        <b>FilePut:</b> @Model.ActivationParameters.FilePut <br />
+        <b>FileId:</b> @Model.ActivationParameters.FileId <br />
+        <b>Client:</b> @Model.ActivationParameters.Client <br />
+        <br />
+        <b>FileContent:</b> @Model.FileContent <br />
+        <b>ErrorMessage:</b> @Model.ErrorMessage <br />
+    </div>
+</body>
+</html>
